@@ -45,6 +45,8 @@ main {
     text-align: center;
 }
 
+
+/* header */
 header {
     z-index: 10;
     background-color: #1fa7cc;
@@ -55,30 +57,31 @@ header {
 
     position: fixed;
     width: 100%;
-    margin-bottom: 50px;
-
-    img {
-        width: 130px;
-        height: 40px;
-    }
-
-    ul {
-        display: flex;
-        gap: 16px;
-    }
-
-    a {
-        font-size: 20px;
-        font-weight: 500;
-        color: #000;
-    }
-
-    a:hover {
-        text-decoration: underline;
-        color: #ffffffa7;
-    }
 }
 
+header img {
+    width: 130px;
+    height: 40px;
+}
+
+header ul {
+    display: flex;
+    gap: 16px;
+}
+
+header a {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: #ffffffa7;
+}
+
+
+/* banner */
 .banner {
     display: flex;
     flex-direction: column;
@@ -114,7 +117,7 @@ header {
 }
 
 
-
+/* footer */
 footer {
     background-color: #1fa7cc;
     display: flex;
@@ -122,17 +125,18 @@ footer {
     align-items: center;
     padding: 20px 80px;
 
-    p {
-        font-size: 16px;
-        color: #000;
-    }
+}
 
-    a {
-        text-decoration: underline;
-    }
+footer p {
+    font-size: 16px;
+    color: #000;
+}
 
-    a:hover {
-        text-decoration: underline;
-        color: #ffffffa7;
-    }
+footer a {
+    text-decoration: underline;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #ffffffa7;
 }
