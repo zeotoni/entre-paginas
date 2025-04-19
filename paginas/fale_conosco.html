@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre Páginas</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/fale_conosco.css">
+</head>
+
+<body>
+    <header>
+        <a href="https://uniube.br/" target="_blank">
+            <img src="../imagens/logo_uniube.svg" alt="Logo da uniube">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="./imagens.html">Imagens</a></li>
+                <li><a href="./links.html">Links</a></li>
+                <li><a href="fale_conosco.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="banner">
+            <h1>Palavras Que Conectam</h1>
+            <h2>Porque toda boa história merece ser escutada</h2>
+        </div>
+
+        <section class="section_content">
+            <h3>Deixe sua mensagem</h3>
+
+            <form action="#">
+                <fieldset>
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" placeholder="Nome completo" required>
+                </fieldset>
+
+                <fieldset role="radiogroup">
+
+                    <legend>Qual o motivo do seu contato ?</legend>
+
+                    <div>
+                        <input type="radio" id="sugestion" name="reason" value="Sugestão" required>
+                        <label for="sugestion">Sugestão</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="complaint" name="reason" value="Reclamação" required>
+                        <label for="complaint">Reclamação</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="praise" name="reason" value="Elogio" required>
+                        <label for="praise">Elogio</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Quais são seus gêneros favoritos ?</legend>
+
+                    <div>
+                        <input type="checkbox" id="fantasy" name="themes" value="fantasy">
+                        <label for="fantasy">Fantasia</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="romance" name="themes" value="romance">
+                        <label for="romance">Romance</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="sci-fi" name="themes" value="sci-fi">
+                        <label for="sci-fi">Ficção Científica</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="mystery" name="themes" value="mystery">
+                        <label for="mystery">Policial</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="classics" name="themes" value="classics">
+                        <label for="classics">Clássicos</label>
+                    </div>
+                </fieldset>
+
+
+                <fieldset>
+                    <label for="message">Escreva sua mensagem</label>
+                    <textarea name="message" id="message" minlength="20" rows="4" required></textarea>
+                </fieldset>
+
+                <button class="btn-form" aria-label="Enviar formulário de contato" type="submit">ENVIAR</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por
+            <a href="https://github.com/zeotoni/entre-paginas" target="_blank">Ezequiel Otoni Silva Freire</a>
+        </p>
+        <p>RA - 1205720-2</p>
+    </footer>
+</body>
+
+</html>
