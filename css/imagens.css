@@ -1,0 +1,64 @@
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    width: 100%;
+    position: relative;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../imagens/vasily.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.banner h1 {
+    margin: 100px 0 10px;
+    font-size: 76px;
+    color: #00194e;
+}
+
+.banner h2 {
+    font-size: 48px;
+    margin-bottom: 64px;
+    color: #00194e;
+    font-family: "Pacifico", cursive;
+}
+
+.section_content {
+    margin-inline: auto;
+}
+
+.section_content h3 {
+    margin: 32px 0 0;
+    font-size: 38px;
+}
+
+.images {
+    margin: 38px 48px;
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.images img {
+    width: 200px;
+    height: 300px;
+    border: 1px solid #00194e;
+    box-shadow: 5px 10px rgb(0, 25, 78, 0.5);
+}
+
