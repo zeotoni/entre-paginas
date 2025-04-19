@@ -1,0 +1,71 @@
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    width: 100%;
+    position: relative;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../imagens/vasily.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.banner h1 {
+    margin: 100px 0 10px;
+    font-size: 76px;
+    color: #00194e;
+}
+
+.banner h2 {
+    font-size: 48px;
+    margin-bottom: 64px;
+    color: #00194e;
+    font-family: "Pacifico", cursive;
+}
+
+.section_table {
+    margin-inline: auto;
+}
+
+.section_table h3 {
+    margin: 32px 0 0;
+    font-size: 38px;
+}
+
+.section_table table {
+    padding: 10px;
+    border-collapse: collapse;
+    margin: 38px 48px;
+}
+
+.section_table table thead {
+    background-color: #00194e;
+    color: #fff;
+}
+
+.section_table table td,
+th {
+    text-align: left;
+    padding: 8px;
+    font-size: 20px;
+}
+
+.section_table table tbody tr:nth-child(even) {
+    background-color: #5cbaf55d;
+}
