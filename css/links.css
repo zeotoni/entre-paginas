@@ -1,0 +1,44 @@
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.section_content {
+    margin-inline: auto;
+}
+
+.section_content h3 {
+    margin: 32px 0 0;
+    font-size: 38px;
+}
+
+.section_content ol {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 38px 48px;
+    list-style-position: inside;
+    gap: 20px;
+}
+
+.section_content li{
+    padding: 22px;
+    width: 100%;
+    border-radius: 25px;
+    background-color: #00194e;
+    color: #fff;
+    box-shadow: 5px 10px rgb(0, 25, 78, 0.5);
+}
+
+.section_content li:hover {
+    background-color: #00194ed6;
+    transition: .5s;
+}
+
+.section_content a {
+    font-size: 22px;
+}
